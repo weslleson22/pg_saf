@@ -17,11 +17,11 @@ export default function EmergencyBar() {
           </span>
           <span className="font-semibold text-saf-light tracking-wide flex items-center gap-1.5 uppercase text-[11px]">
             <ShieldAlert className="w-3.5 h-3.5 text-saf-gold inline-block" />
-            Plantão Criminal 24 Horas
+            Atendimento Jurídico Integral &amp; Plantão Criminal 24h
           </span>
           <span className="hidden md:inline text-saf-subtle">•</span>
           <span className="hidden md:inline text-saf-muted">
-            Assistência imediata para prisões em flagrante, audiência de custódia e mandados.
+            Equipe especializada em todas as áreas do Direito e assistência imediata para flagrantes.
           </span>
         </div>
 

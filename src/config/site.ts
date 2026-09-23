@@ -99,23 +99,6 @@ export const LAWYERS: Lawyer[] = [
     whatsappMessage: "Olá, Dra. Lívia! Gostaria de tratar de governança e defesa penal empresarial com seu escritório."
   },
   {
-    id: "misael-fonseca",
-    name: "Dr. Misael Fonseca",
-    role: "Advogado Associado",
-    oab: "OAB/MA",
-    folder: "MISAEL",
-    photo1: "/foto/MISAEL/foto1.jpg",
-    photo2: "/foto/MISAEL/foto2.jpg",
-    specialty: "Defesa Técnica em Inquéritos & Execução Penal",
-    description: "Acompanhamento minucioso de inquéritos policiais, procedimentos investigatórios do MP e execuções penais.",
-    credentials: [
-      "Focado em garantias constitucionais e acompanhamento de oitivas",
-      "Atuação em progressão de regime, livramento condicional e nulidades",
-      "Plantão de suporte para diligências em delegacias e órgãos de fiscalização"
-    ],
-    whatsappMessage: "Olá, Dr. Misael! Gostaria de orientações sobre inquérito policial / execução penal."
-  },
-  {
     id: "myceia-santos",
     name: "Dra. Myceia Santos",
     role: "Advogada Associada",
@@ -248,20 +231,20 @@ export const PRACTICE_AREAS: PracticeArea[] = [
 
 export const TRUST_BADGES = [
   {
-    title: "Sigilo Profissional Absoluto",
-    description: "Garantia irrestrita de confidencialidade amparada pelo Estatuto da Advocacia e sigilo de justiça."
+    title: "Equipe Multidisciplinar",
+    description: "Advogados especialistas com atuação integrada em Direito Criminal, Cível, Família, Empresarial e Trabalhista."
   },
   {
-    title: "Plantão Criminal 24 Horas",
-    description: "Pronta resposta imediata para prisões em flagrante, busca e apreensão e custódia a qualquer hora."
+    title: "Plantão de Urgência 24h",
+    description: "Pronta resposta ininterrupta para prisões em flagrante, custódia e medidas cautelares emergenciais."
   },
   {
-    title: "Atuação nos Tribunais Superiores",
-    description: "Sustentações orais e recursos técnicos com presença no TJ, TRFs, STJ e Supremo Tribunal Federal."
+    title: "Tribunais Superiores & Nacional",
+    description: "Sustentações orais e recursos técnicos com atuação perante TJs, TRFs, STJ e Supremo Tribunal Federal."
   },
   {
-    title: "Atendimento Sob Medida",
-    description: "Cada causa recebe estratégia artesanal, sem peticionamento genérico ou soluções automatizadas."
+    title: "Sigilo & Estratégia Sob Medida",
+    description: "Confidencialidade irrestrita e advocacia artesanal, sem soluções pré-moldadas ou genéricas."
   }
 ];
 

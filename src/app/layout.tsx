@@ -19,8 +19,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://safadvocacia.com.br"),
-  title: `${SITE_CONFIG.shortName} | Defesa Penal Estratégica & Advocacia de Alto Padrão`,
-  description: "Escritório de advocacia de excelência com atuação combativa em Direito Penal Econômico, Flagrantes, Audiências de Custódia, Tribunal do Júri e Tribunais Superiores.",
+  title: `${SITE_CONFIG.shortName} | Advocacia Multidisciplinar & Defesa Especializada`,
+  description: "Banca jurídica multidisciplinar de alto padrão. Equipe de advogados especialistas em Direito Criminal, Cível, Família e Sucessões, Empresarial, Tributário e Trabalhista.",
   keywords: [
     "advocacia criminal",
     "advogado criminalista",
