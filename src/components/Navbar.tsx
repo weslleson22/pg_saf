@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { MessageSquare, Menu, X, Shield, Phone } from "lucide-react";
+import { MessageSquare, Menu, X, Phone } from "lucide-react";
 import { SITE_CONFIG, getWhatsAppUrl } from "@/config/site";
 
 export default function Navbar() {
@@ -43,10 +43,10 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-base sm:text-lg tracking-wider text-saf-light font-semibold group-hover:text-saf-gold transition-colors leading-tight">
-                SANTOS, ARAÚJO &amp; FONSECA
+                SAF ADVOCACIA
               </span>
               <span className="text-[10px] tracking-[0.25em] text-saf-gold uppercase font-medium">
-                Advocacia &amp; Consultoria
+                E CONSULTORIA
               </span>
             </div>
           </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <MessageSquare className="w-4 h-4 text-emerald-400" />
-              <span>Plantão 24h</span>
+              <span>Falar no WhatsApp</span>
             </a>
           </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="sm:hidden p-2 text-emerald-400 bg-saf-surface border border-saf-border rounded"
-              aria-label="WhatsApp Plantão"
+              aria-label="WhatsApp"
             >
               <Phone className="w-4 h-4" />
             </a>
@@ -124,7 +124,7 @@ export default function Navbar() {
                   className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded bg-[#17212E] border border-saf-gold/50 text-saf-gold text-xs font-semibold uppercase tracking-wider hover:bg-saf-gold hover:text-saf-bg transition-colors"
                 >
                   <MessageSquare className="w-4 h-4 text-emerald-400" />
-                  <span>Falar no WhatsApp (Plantão 24h)</span>
+                  <span>Falar no WhatsApp</span>
                 </a>
               </div>
             </div>

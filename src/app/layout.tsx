@@ -19,24 +19,27 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://safadvocacia.com.br"),
-  title: `${SITE_CONFIG.shortName} | Advocacia Multidisciplinar & Defesa Especializada`,
-  description: "Banca jurídica multidisciplinar de alto padrão. Equipe de advogados especialistas em Direito Criminal, Cível, Família e Sucessões, Empresarial, Tributário e Trabalhista.",
+  title: `${SITE_CONFIG.name} | Direito Imobiliário & Advocacia Especializada`,
+  description: "Banca jurídica de alto padrão com atuação destacada em Direito Imobiliário & Negócios, Regularização Fundiária, Direito Criminal Estratégico, Família e Sucessões, Civil e Empresarial.",
   keywords: [
-    "advocacia criminal",
-    "advogado criminalista",
-    "direito penal são luís",
-    "plantão criminal 24h",
-    "habeas corpus",
-    "audiência de custódia",
-    "tribunal do júri",
-    "direito penal econômico",
-    "SAF advocacia",
-    "Santos Araújo e Fonseca"
+    "SAF Advocacia e Consultoria",
+    "SAF Advocacia",
+    "direito imobiliario",
+    "regularizacao fundiaria",
+    "usucapiao extrajudicial",
+    "contratos imobiliarios",
+    "leiloes de imoveis",
+    "assessoria a condominios",
+    "direito criminal estrategico",
+    "direito de familia e sucessoes",
+    "direito civil e contratos",
+    "consultoria empresarial",
+    "advogado sao luis ma"
   ],
   authors: [{ name: SITE_CONFIG.name }],
   openGraph: {
-    title: `${SITE_CONFIG.name} | Defesa Penal Estratégica`,
-    description: "Atuação célere, sigilosa e combativa na defesa de direitos fundamentais perante todas as instâncias judiciais.",
+    title: `${SITE_CONFIG.name} | Direito Imobiliário & Defesa Jurídica Estratégica`,
+    description: "Atuação célere, sigilosa e estratégica na regularização de imóveis, consultoria imobiliária e defesa combativa perante todas as instâncias.",
     type: "website",
     locale: "pt_BR",
     images: [
@@ -64,7 +67,7 @@ export default function RootLayout({
     "@type": "LegalService",
     "name": SITE_CONFIG.name,
     "alternateName": SITE_CONFIG.shortName,
-    "description": "Banca de advocacia de alta performance especializada em Direito Criminal e consultoria estratégica.",
+    "description": "Banca de advocacia de alta performance especializada em Direito Imobiliário & Negócios, Regularização Fundiária e Consultoria Jurídica Estratégica.",
     "telephone": SITE_CONFIG.phoneDisplay,
     "email": SITE_CONFIG.email,
     "address": {

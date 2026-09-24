@@ -1,4 +1,4 @@
-export interface Lawyer {
+﻿export interface Lawyer {
   id: string;
   name: string;
   role: string;
@@ -30,11 +30,10 @@ export interface FAQItem {
 }
 
 export const SITE_CONFIG = {
-  name: "Santos, Araújo e Fonseca Advocacia",
-  shortName: "SAF Advocacia",
+  name: "SAF Advocacia e Consultoria",
+  shortName: "SAF Advocacia e Consultoria",
   monogram: "SAF",
-  tagline: "Excelência, Rigor Técnico e Defesa Intransigente",
-  // O número do WhatsApp pode ser alterado aqui a qualquer momento:
+  tagline: "Excelência em Direito Imobiliário, Atuação Estratégica & Soluções Jurídicas Integradas",
   whatsappNumber: "5598999999999",
   phoneDisplay: "(98) 99999-9999",
   email: "contato@safadvocacia.com.br",
@@ -42,232 +41,202 @@ export const SITE_CONFIG = {
   addressShort: "São Luís - MA | Atendimento Nacional",
   oabRegistration: "Sociedade de Advogados devidamente inscrita na OAB/MA",
   businessHours: "Segunda a Sexta: 08h às 18h | Plantão Criminal: 24 Horas / 7 Dias",
-  defaultWhatsAppMessage: "Olá! Gostaria de solicitar um atendimento jurídico com a equipe da SAF Advocacia.",
-  emergencyWhatsAppMessage: "URGENTE: Preciso de atendimento do Plantão Criminal 24h para assistência em flagrante / custódia.",
+  defaultWhatsAppMessage: "Olá, gostaria de falar com um advogado da SAF Advocacia e Consultoria.",
+  emergencyWhatsAppMessage: "Olá! Gostaria de falar com a equipe da SAF Advocacia e Consultoria sobre uma demanda urgente.",
 };
 
 export const LAWYERS: Lawyer[] = [
   {
-    id: "anderson-fonseca",
-    name: "Dr. Anderson Fonseca",
-    role: "Sócio-Fundador",
-    oab: "OAB/MA",
-    folder: "ANDERSON",
-    photo1: "/foto/ANDERSON/foto1.jpg",
-    photo2: "/foto/ANDERSON/foto2.jpg",
-    specialty: "Direito Penal Econômico & Processual Penal",
-    description: "Especialista em defesas penais complexas, crimes contra a ordem tributária e atuação em instâncias superiores.",
+    id: "anderson-araujo",
+    name: "Anderson Luiz Araújo Júnior",
+    role: "Advogado / Sócio",
+    oab: "OAB/MA nº 28.128",
+    folder: "Anderson Fonseca",
+    photo1: "/foto/Anderson Fonseca/foto1.jpg",
+    photo2: "/foto/Anderson Fonseca/foto2.jpg",
+    specialty: "Direito Penal, Processo Penal & Defesa Estratégica",
+    description: "Advogado sócio com sólida atuação e especialização técnica em Direito Penal e Processo Penal, com foco em defesas técnicas de alta complexidade, consultoria preventiva e garantias fundamentais.",
     credentials: [
-      "Pós-graduado em Direito Penal Econômico e Processo Penal",
-      "Vasta experiência em atuação preventiva penal e sustentações orais",
-      "Foco em crimes financeiros, lavagem de capitais e inquéritos especiais"
+      "Pós-graduado em Direito Penal e Processo Penal",
+      "Especialização em Lei de Drogas e Organização Criminosa",
+      "Atuação combativa em inquéritos policiais, prisões em flagrante e audiências de custódia",
+      "Defesa técnica perante a Justiça Estadual, Federal e Cortes Superiores (STJ e STF)"
     ],
-    whatsappMessage: "Olá, Dr. Anderson! Gostaria de agendar uma consulta sobre Direito Penal Econômico e Defesa Criminal."
+    whatsappMessage: "Olá, Dr. Anderson Luiz Araújo Júnior! Gostaria de uma consultoria com a SAF Advocacia e Consultoria."
   },
   {
     id: "jose-araujo",
-    name: "Dr. José Araújo",
-    role: "Sócio-Fundador",
+    name: "José Araújo",
+    role: "Advogado / Sócio",
     oab: "OAB/MA",
-    folder: "JOSE",
-    photo1: "/foto/JOSE/foto1.jpg",
-    photo2: "/foto/JOSE/foto2.jpg",
-    specialty: "Direito Criminal Estratégico & Tribunal do Júri",
-    description: "Atuação combativa na tribuna do Tribunal do Júri, acompanhamento de prisões em flagrante e medidas urgentes de liberdade.",
+    folder: "José Araújo",
+    photo1: "/foto/José Araújo/foto1.jpg",
+    photo2: "/foto/José Araújo/foto2.jpg",
+    specialty: "Direito Criminal / Penal Estratégico & Tribunal do Júri",
+    description: "Atuação combativa na defesa técnica criminal, Tribunal do Júri, acompanhamento de prisões em flagrante, inquéritos e medidas urgentes de liberdade.",
     credentials: [
-      "Especialista em Ciências Criminais e Tribunal do Júri",
-      "Experiência consolidada em defesas orais e audiências de custódia",
-      "Atuação célere em plantão para habeas corpus e revogação de prisões"
+      "Especialista em Ciências Criminais e Processo Penal",
+      "Experiência consolidada em defesas orais, audiências de custódia e Tribunal do Júri",
+      "Atuação estratégica em plantão 24h para habeas corpus e recursos perante Tribunais Superiores"
     ],
-    whatsappMessage: "Olá, Dr. José Araújo! Preciso de consultoria estratégica em matéria criminal / Tribunal do Júri."
+    whatsappMessage: "Olá, Dr. José Araújo! Gostaria de uma consultoria em Direito Criminal com a SAF Advocacia e Consultoria."
   },
   {
-    id: "livia-santos",
-    name: "Dra. Lívia Santos",
-    role: "Sócia-Fundadora",
+    id: "livia-dias",
+    name: "Lívia Dias",
+    role: "Advogada / Sócia",
     oab: "OAB/MA",
-    folder: "LIVIA",
-    photo1: "/foto/LIVIA/foto1.jpg",
-    photo2: "/foto/LIVIA/foto2.jpg",
-    specialty: "Direito Penal Empresarial & Compliance",
-    description: "Gestão estratégica de riscos criminais corporativos, investigações defensivas internas e governança jurídica.",
+    folder: "Lívia Dias",
+    photo1: "/foto/Lívia Dias/foto1.jpg",
+    photo2: "/foto/Lívia Dias/foto2.jpg",
+    specialty: "Direito Imobiliário, Condominial & Cível Estratégico",
+    description: "Especialista em assessoria condominial, contratos imobiliários, contencioso cível, reintegração de posse e consultoria preventiva patrimonial.",
     credentials: [
-      "Especialista em Direito Corporativo e Compliance Penal",
-      "Consultora para comitês de ética e gestão de passivos penais",
-      "Defesa institucional de dirigentes, sócios e executivos"
+      "Especialista em Direito Imobiliário e Gestão Jurídica Condominial",
+      "Consultoria em contratos de locação, reintegração/manutenção de posse e disputas imobiliárias",
+      "Auditoria jurídica preventiva (due diligence) e mediação estratégica de conflitos"
     ],
-    whatsappMessage: "Olá, Dra. Lívia! Gostaria de tratar de governança e defesa penal empresarial com seu escritório."
-  },
-  {
-    id: "myceia-santos",
-    name: "Dra. Myceia Santos",
-    role: "Advogada Associada",
-    oab: "OAB/MA",
-    folder: "MYCEIA",
-    photo1: "/foto/MYCEIA/foto1.jpg",
-    photo2: "/foto/MYCEIA/foto2.jpg",
-    specialty: "Direito Civil & Planejamento Sucessório",
-    description: "Atendimento focado na proteção de patrimônio familiar, inventários judiciais e extrajudiciais e litígios cíveis complexos.",
-    credentials: [
-      "Especialista em Direito das Famílias e Sucessões",
-      "Mediação estratégica e estruturação de holdings familiares",
-      "Solução ágil e sigilosa para partilhas de bens de alto valor"
-    ],
-    whatsappMessage: "Olá, Dra. Myceia! Gostaria de agendar uma consulta sobre inventário / direito civil patrimonial."
+    whatsappMessage: "Olá, Dra. Lívia Dias! Gostaria de agendar uma consulta sobre Direito Imobiliário / Condominial com a SAF Advocacia e Consultoria."
   },
   {
     id: "tayane-araujo",
-    name: "Dra. Tayane Araújo",
-    role: "Advogada Associada",
+    name: "Tayane Araújo",
+    role: "Advogada / Sócia",
     oab: "OAB/MA",
-    folder: "TAYANE",
-    photo1: "/foto/TAYANE/foto1.jpg",
-    photo2: "/foto/TAYANE/foto2.jpg",
-    specialty: "Direito Empresarial & Contratos Estratégicos",
-    description: "Redação de contratos de alta complexidade, consultoria preventiva empresarial e resolução contenciosa de disputas societárias.",
+    folder: "Tayane Araújo",
+    photo1: "/foto/Tayane Araújo/foto1.jpg",
+    photo2: "/foto/Tayane Araújo/foto2.jpg",
+    specialty: "Direito de Família, Sucessões & Planejamento Patrimonial",
+    description: "Condução especializada de inventários de alta complexidade, partilha de bens, divórcios e planejamento sucessório patrimonial.",
     credentials: [
-      "Especialista em Direito Societário e Negocial",
-      "Blindagem jurídica contratual e negociações de acordos bilaterais",
-      "Assessoria para estruturação de novos empreendimentos"
+      "Especialista em Direito das Famílias e Sucessões",
+      "Planejamento sucessório, testamentos e estruturação patrimonial familiar",
+      "Resolução célere e sigilosa de inventários judiciais e extrajudiciais em cartório"
     ],
-    whatsappMessage: "Olá, Dra. Tayane! Gostaria de consultoria jurídica sobre contratos e direito societário."
-  },
-  {
-    id: "werverson-santos",
-    name: "Dr. Werverson Santos",
-    role: "Advogado Associado",
-    oab: "OAB/MA",
-    folder: "WERVERSON",
-    photo1: "/foto/WERVERSON/foto1.jpg",
-    photo2: "/foto/WERVERSON/foto2.jpg",
-    specialty: "Contencioso Estratégico & Litígios Complexos",
-    description: "Defesa combativa de interesses em causas cíveis e penais de alta complexidade com acompanhamento individualizado.",
-    credentials: [
-      "Especialista em Processo Civil e Prática Forense Avançada",
-      "Elaboração de teses recursais para Tribunais de Justiça e Superiores",
-      "Condução técnica de disputas jurídicas sensíveis e confidenciais"
-    ],
-    whatsappMessage: "Olá, Dr. Werverson! Gostaria de solicitar uma análise para um litígio judicial estratégico."
+    whatsappMessage: "Olá, Dra. Tayane Araújo! Gostaria de uma consultoria sobre planejamento sucessório / inventário com a SAF Advocacia e Consultoria."
   }
 ];
 
 export const PRACTICE_AREAS: PracticeArea[] = [
   {
-    id: "criminal",
+    id: "imobiliario",
     isMain: true,
-    badge: "Especialidade Principal & Plantão 24h",
-    title: "Direito Penal & Defesa Criminal Estratégica",
-    subtitle: "Atuação técnica imediata, combativa e intransigente em situações de alto risco e urgência.",
-    description: "Nossa banca oferece atendimento célere com foco na preservação irrestrita da liberdade, combate a excessos estatais e elaboração de teses defensivas sofisticadas perante todas as instâncias judiciais.",
+    badge: "Destaque Principal & Carro-Chefe",
+    title: "Direito Imobiliário & Negócios",
+    subtitle: "Segurança jurídica e solidez patrimonial em operações e regularizações imobiliárias.",
+    description: "Nossa banca é referência em Direito Imobiliário e negócios imobiliários, prestando assessoria consultiva, preventiva e contenciosa de alto rigor técnico para proprietários, investidores, condomínios e incorporadoras.",
     items: [
-      "Plantão 24 Horas para Prisões em Flagrante e Delegacias",
-      "Atuação Imediata em Audiências de Custódia",
-      "Impetração Urgente de Habeas Corpus (TJ, TRF, STJ e STF)",
-      "Acompanhamento em Inquéritos Policiais, PICs e Operações",
-      "Atuação Combativa e Técnica no Tribunal do Júri",
-      "Penal Econômico: Crimes Tributários, Financeiros e Lavagem",
-      "Recursos em Instâncias Superiores e Sustentação Oral"
+      "Regularização Fundiária e de Imóveis (Urbanos e Rurais)",
+      "Contratos de Compra, Venda, Locação e Garantias",
+      "Assessoria Especializada a Condomínios e Associações",
+      "Loteamentos, Incorporações e Novos Empreendimentos",
+      "Usucapião Judicial e Extrajudicial em Cartório",
+      "Ações Possessórias: Reintegração, Manutenção e Imissão de Posse",
+      "Segurança Jurídica e Arrematação em Leilões Imobiliários",
+      "Auditoria Jurídica Imobiliária Preventiva (Due Diligence)"
     ],
-    ctaText: "Acionar Plantão Criminal 24h",
-    whatsappMessage: "Olá! Preciso de orientação urgente com a banca de Direito Penal da SAF Advocacia."
+    ctaText: "Falar com Especialista em Direito Imobiliário",
+    whatsappMessage: "Olá! Gostaria de falar com um advogado da SAF Advocacia e Consultoria sobre Direito Imobiliário e Regularização de Imóveis."
   },
   {
-    id: "civil",
-    title: "Direito Civil & Contratual Estratégico",
-    subtitle: "Segurança jurídica preventiva e resolução assertiva de litígios patrimoniais.",
-    description: "Elaboração de contratos de alta complexidade, recuperação de ativos, responsabilidade civil e condução técnica de litígios imobiliários e indenizatórios.",
+    id: "criminal",
+    title: "Direito Criminal / Penal Estratégico",
+    subtitle: "Defesa técnica imediata, inquéritos e consultoria preventiva com plantão 24h.",
+    description: "Atuação intransigente na preservação da liberdade e defesa técnica perante delegacias, audiências de custódia, Tribunal do Júri e Tribunais Superiores.",
     items: [
-      "Blindagem e Auditoria de Contratos Complexos",
-      "Ações de Responsabilidade Civil e Reparação de Danos",
-      "Contencioso Cível Imobiliário e Posse",
-      "Execução de Títulos e Cobrança de Créditos Estruturados"
+      "Plantão 24 Horas para Flagrantes e Audiências de Custódia",
+      "Habeas Corpus de Urgência (TJ, TRF, STJ e STF)",
+      "Acompanhamento em Inquéritos Policiais e Operações",
+      "Atuação Combativa e Técnica no Tribunal do Júri",
+      "Consultoria Preventiva e Defesa em Crimes Econômicos"
     ],
-    ctaText: "Consultar Especialista Cível",
-    whatsappMessage: "Olá! Gostaria de tirar dúvidas com o setor de Direito Civil e Contratos da SAF."
+    ctaText: "Consultar Setor Criminal",
+    whatsappMessage: "Olá! Gostaria de falar com a equipe da SAF Advocacia e Consultoria sobre Direito Criminal / Plantão Penal."
   },
   {
     id: "familia",
-    title: "Família & Planejamento Sucessório",
-    subtitle: "Discrição, empatia e solidez na proteção do patrimônio familiar.",
-    description: "Condução sigilosa de divórcios, partilhas de bens, testamentos e inventários judiciais ou em cartório, priorizando a estabilidade patrimonial entre gerações.",
+    title: "Direito de Família e Sucessões",
+    subtitle: "Planejamento sucessório, inventários e partilhas com discrição e segurança.",
+    description: "Condução humanizada e estratégica de inventários, partilhas de bens, testamentos e divórcios, resguardando a estabilidade patrimonial entre gerações.",
     items: [
       "Inventários Judiciais e Extrajudiciais de Alta Complexidade",
       "Planejamento Sucessório e Estruturação de Heranças",
-      "Divórcios Consensuais e Litigiosos com Partilha Segura",
+      "Partilha Segura de Bens e Dissolução Patrimonial",
+      "Divórcios Consensuais e Litigiosos",
       "Pactos Antenupciais e Acordos de Convivência"
     ],
-    ctaText: "Consultar Direito de Família",
-    whatsappMessage: "Olá! Gostaria de agendar uma consulta sobre inventário / partilha com a SAF Advocacia."
+    ctaText: "Consultar Família & Sucessões",
+    whatsappMessage: "Olá! Gostaria de falar com a equipe da SAF Advocacia e Consultoria sobre Inventário / Direito de Família."
+  },
+  {
+    id: "civil",
+    title: "Direito Civil e Contratos",
+    subtitle: "Segurança jurídica preventiva e resolução assertiva de litígios patrimoniais.",
+    description: "Elaboração e auditoria de contratos complexos, recuperação estruturada de ativos, responsabilidade civil e condução contenciosa cível.",
+    items: [
+      "Auditoria e Elaboração de Contratos Complexos",
+      "Ações de Responsabilidade Civil e Indenizações",
+      "Cobrança de Créditos Estruturados e Execuções",
+      "Resolução de Disputas Cíveis e Obrigacionais"
+    ],
+    ctaText: "Consultar Especialista Cível",
+    whatsappMessage: "Olá! Gostaria de falar com a equipe da SAF Advocacia e Consultoria sobre Direito Civil e Contratos."
   },
   {
     id: "empresarial",
-    title: "Direito Empresarial & Tributário",
+    title: "Consultoria Empresarial e Tributária",
     subtitle: "Sustentabilidade fiscal e blindagem de operações societárias.",
-    description: "Consultoria preventiva para tomada de decisões, defesas em execuções fiscais, recuperação de tributos pagos indevidamente e estruturação societária.",
+    description: "Consultoria preventiva para tomada de decisões, defesas em execuções fiscais, recuperação de créditos e estruturação societária.",
     items: [
-      "Defesa Técnica em Autos de Infração e Execuções Fiscais",
+      "Defesa Técnica em Execuções Fiscais e Autos de Infração",
       "Planejamento Tributário Lícito e Recuperação de Créditos",
       "Governança Corporativa e Reestruturação Societária",
       "Assessoria em Fusões, Aquisições e Contratos Comerciais"
     ],
     ctaText: "Consultar Setor Empresarial",
-    whatsappMessage: "Olá! Gostaria de uma avaliação tributária/empresarial para minha organização."
-  },
-  {
-    id: "trabalhista",
-    title: "Direito Trabalhista Corporativo",
-    subtitle: "Gestão estratégica de passivo e conformidade para empresas e executivos.",
-    description: "Defesa patronal contenciosa de alto valor, auditoria preventiva de rotinas laborais e negociação de contratos executivos.",
-    items: [
-      "Defesa Patronal em Reclamatórias de Alto Risco",
-      "Prevenção e Mitigação de Passivo Trabalhista",
-      "Contratos de Alta Gestão e Não-Concorrência",
-      "Atuação em Mediações com Sindicatos e Ministério Público"
-    ],
-    ctaText: "Consultar Trabalhista Patronal",
-    whatsappMessage: "Olá! Gostaria de conversar sobre consultoria trabalhista estratégica para empresas."
+    whatsappMessage: "Olá! Gostaria de falar com a equipe da SAF Advocacia e Consultoria sobre Consultoria Empresarial e Tributária."
   }
 ];
 
 export const TRUST_BADGES = [
   {
-    title: "Equipe Multidisciplinar",
-    description: "Advogados especialistas com atuação integrada em Direito Criminal, Cível, Família, Empresarial e Trabalhista."
+    title: "Autoridade em Direito Imobiliário",
+    description: "Expertise em regularização fundiária, usucapião, contratos complexos e segurança jurídica para investimentos imobiliários."
   },
   {
-    title: "Plantão de Urgência 24h",
-    description: "Pronta resposta ininterrupta para prisões em flagrante, custódia e medidas cautelares emergenciais."
+    title: "Banca Multidisciplinar Integrada",
+    description: "Atuação integrada e especializada em Direito Imobiliário, Criminal, Família e Sucessões, Cível e Empresarial."
+  },
+  {
+    title: "Plantão Penal Permanente 24h",
+    description: "Pronta resposta ininterrupta para flagrantes, custódia e urgências criminais em delegacias e tribunais."
   },
   {
     title: "Tribunais Superiores & Nacional",
-    description: "Sustentações orais e recursos técnicos com atuação perante TJs, TRFs, STJ e Supremo Tribunal Federal."
-  },
-  {
-    title: "Sigilo & Estratégia Sob Medida",
-    description: "Confidencialidade irrestrita e advocacia artesanal, sem soluções pré-moldadas ou genéricas."
+    description: "Estrutura para condução de processos e sustentações perante Tribunais de Justiça e Cortes Superiores em Brasília."
   }
 ];
 
 export const FAQ_LIST: FAQItem[] = [
   {
+    question: "Como funciona a regularização de um imóvel sem escritura ou com pendências na matrícula?",
+    answer: "A regularização imobiliária depende da análise detalhada da cadeia dominial e da situação física e registral do imóvel. Pode ser realizada via via administrativa em cartório (como a adjudicação compulsória ou usucapião extrajudicial), procedimentos de REURB (regularização fundiária urbana/rural) ou via judicial. Nossa equipe analisa os documentos para indicar o caminho mais célere e com menor impacto tributário."
+  },
+  {
+    question: "Quais são as vantagens da Usucapião Extrajudicial em Cartório?",
+    answer: "A Usucapião Extrajudicial, processada diretamente no Cartório de Registro de Imóveis competente, oferece muito mais celeridade do que a via judicial tradicional. Com os documentos, planta, memorial descritivo e anuência dos confrontantes devidamente instruídos pela advocacia, é possível obter a propriedade definitiva e a matrícula do imóvel em tempo consideravelmente reduzido."
+  },
+  {
+    question: "Por que contar com assessoria jurídica na compra, venda ou leilão de imóveis?",
+    answer: "A auditoria jurídica imobiliária (due diligence) previne riscos graves como fraudes contra credores, penhoras ocultas, passivos tributários e vícios estruturais que podem anular a compra ou gerar prejuízos irreparáveis. Em leilões imobiliários, nossa banca examina previamente o edital, a viabilidade de desocupação e a higidez do processo judicial para garantir arrematações lucrativas e 100% seguras."
+  },
+  {
     question: "O que fazer imediatamente em caso de prisão em flagrante ou abordagem policial?",
-    answer: "O primeiro passo é manter a calma e exercer o direito constitucional de permanecer em silêncio até a chegada de um advogado criminalista de sua confiança. Não forneça senhas de celulares sem mandado judicial e exija que a autoridade policial entre em contato imediato com a defesa técnica. Nosso plantão 24h atende diligências com rapidez para assegurar que nenhum direito seja violado na delegacia."
+    answer: "O primeiro passo é manter a calma e exercer o direito constitucional de permanecer em silêncio até a chegada de um advogado criminalista. Não forneça senhas de celulares sem mandado judicial e exija o contato com a defesa técnica. Nosso plantão criminal atende diligências com prontidão para assegurar a preservação de direitos e atuar na audiência de custódia."
   },
   {
-    question: "Qual a relevância da Audiência de Custódia e como o escritório atua?",
-    answer: "A Audiência de Custódia ocorre em até 24 horas após a prisão e é o momento processual definitivo para demonstrar a ilegalidade da prisão ou pleitear a liberdade provisória (com ou sem medidas cautelares). Nossa banca prepara teses documentadas com comprovação de residência, ocupação lícita e primariedade para evitar a conversão em prisão preventiva."
-  },
-  {
-    question: "Como é resguardado o sigilo profissional da minha consulta?",
-    answer: "A confidencialidade é a espinha dorsal da advocacia criminal. Todo contato, mensagem, documento e relato trocado entre cliente e advogado é rigorosamente protegido pelo sigilo profissional (Art. 7º, II do Estatuto da OAB) e pelas regras de segredo de justiça, assegurando discrição inviolável desde o primeiro contato."
-  },
-  {
-    question: "O escritório atua fora do estado e perante os Tribunais Superiores?",
-    answer: "Sim. A SAF Advocacia conta com estrutura tecnológica e operacional para atuar em todo o território nacional, com destaque para a impetração de Habeas Corpus e sustentações orais perante os Tribunais Regionais Federais (TRFs), Superior Tribunal de Justiça (STJ) e Supremo Tribunal Federal (STF) em Brasília."
-  },
-  {
-    question: "Como funciona a contratação e o plantão criminal?",
-    answer: "Em casos de urgência (flagrantes, mandados de prisão, buscas), o atendimento é imediato através do nosso canal de plantão telefônico/WhatsApp. Os honorários são ajustados de acordo com a complexidade técnica e a tabela orientativa da OAB, com total transparência e contrato formal."
+    question: "Como o escritório conduz inventários e partilhas com bens imóveis?",
+    answer: "Bens imóveis frequentemente apresentam desafios em inventários devido a pendências documentais, avaliações divergentes ou partilhas entre herdeiros. Nossa atuação integra o Direito de Família e Sucessões com o Direito Imobiliário, permitindo regularizar matrículas pendentes, planejar a partilha de forma justa e, quando todos concordam, lavrar o inventário em cartório com rapidez e menor custo tributário."
   }
 ];
 

@@ -2,14 +2,14 @@
 
 import React from "react";
 import {
+  Building2,
   ShieldAlert,
-  FileCheck2,
   Users2,
+  FileCheck2,
   Landmark,
-  Briefcase,
+  ArrowUpRight,
   CheckCircle2,
   MessageSquare,
-  ArrowUpRight,
 } from "lucide-react";
 import { PRACTICE_AREAS, getWhatsAppUrl } from "@/config/site";
 
@@ -19,16 +19,16 @@ export default function Specialties() {
 
   const getAreaIcon = (id: string) => {
     switch (id) {
+      case "imobiliario":
+        return Building2;
       case "criminal":
         return ShieldAlert;
-      case "civil":
-        return FileCheck2;
       case "familia":
         return Users2;
+      case "civil":
+        return FileCheck2;
       case "empresarial":
         return Landmark;
-      case "trabalhista":
-        return Briefcase;
       default:
         return FileCheck2;
     }
@@ -46,12 +46,13 @@ export default function Specialties() {
             Áreas de Excelência e Dedicação Técnica
           </h2>
           <p className="text-saf-muted text-sm sm:text-base leading-relaxed">
-            Com especialização destacada no contencioso criminal de urgência, nossa banca oferece suporte
-            jurídico integral em áreas determinantes para a segurança e patrimônio de pessoas físicas e jurídicas.
+            Com especialização destacada no <strong className="text-saf-light">Direito Imobiliário e Negócios</strong>,
+            nossa banca oferece assessoria completa para proteger e valorizar o patrimônio de pessoas físicas e empresas,
+            atuando com excelência em áreas jurídicas fundamentais.
           </p>
         </div>
 
-        {/* Card Destaque: DIREITO CRIMINAL / PENAL ECONÔMICO */}
+        {/* Card Destaque: DIREITO IMOBILIÁRIO & NEGÓCIOS (CARRO-CHEFE) */}
         {mainArea && (
           <div className="mb-14 rounded-xl border-2 border-saf-gold/40 bg-gradient-to-br from-[#182232] via-[#121924] to-[#0E131A] p-6 sm:p-10 shadow-2xl shadow-black/60 relative overflow-hidden group">
             {/* Efeito sutil de iluminação */}
@@ -74,7 +75,7 @@ export default function Specialties() {
                 </p>
               </div>
 
-              {/* Botão de Ação Imediata do Plantão */}
+              {/* Botão de Ação Imediata */}
               <div className="flex-shrink-0">
                 <a
                   href={getWhatsAppUrl(mainArea.whatsappMessage)}
@@ -82,17 +83,17 @@ export default function Specialties() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-6 py-3.5 rounded bg-saf-gold hover:bg-saf-gold-light text-[#0A0D12] font-semibold text-sm uppercase tracking-wider transition-all shadow-md group/btn"
                 >
-                  <ShieldAlert className="w-5 h-5 text-[#0A0D12]" />
+                  <Building2 className="w-5 h-5 text-[#0A0D12]" />
                   <span>{mainArea.ctaText}</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                 </a>
               </div>
             </div>
 
-            {/* Checklist de Serviços Penais de Alta Complexidade */}
+            {/* Checklist de Soluções Imobiliárias */}
             <div className="mt-8">
               <h4 className="text-xs uppercase tracking-wider text-saf-gold font-semibold mb-4">
-                Atuação Abrangente na Defesa Penal:
+                Soluções Especializadas em Direito Imobiliário &amp; Negócios:
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
                 {mainArea.items.map((item) => (
@@ -111,7 +112,7 @@ export default function Specialties() {
           </div>
         )}
 
-        {/* Grid das Demais Áreas Integradas */}
+        {/* Grid das Demais Áreas Integradas em Ordem Estrita de Relevância */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {secondaryAreas.map((area) => {
             const Icon = getAreaIcon(area.id);
@@ -128,7 +129,7 @@ export default function Specialties() {
                       <Icon className="w-6 h-6" />
                     </div>
                     <span className="text-[11px] uppercase tracking-wider font-semibold text-saf-gold/80 px-2.5 py-1 rounded bg-[#161E2A] border border-saf-border/60">
-                      Consultoria &amp; Litígio
+                      {area.badge}
                     </span>
                   </div>
 
@@ -163,7 +164,7 @@ export default function Specialties() {
                   >
                     <span className="flex items-center gap-2">
                       <MessageSquare className="w-3.5 h-3.5 text-saf-gold" />
-                      Tirar dúvidas sobre esta área
+                      {area.ctaText}
                     </span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
                   </a>

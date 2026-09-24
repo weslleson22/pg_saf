@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { ShieldCheck, Award, Target, Scale, Check } from "lucide-react";
-import { SITE_CONFIG, getWhatsAppUrl } from "@/config/site";
+import { ShieldCheck, Check } from "lucide-react";
+import { getWhatsAppUrl } from "@/config/site";
 
 export default function AboutOffice() {
   const whatsappUrl = getWhatsAppUrl(
-    "Olá! Gostaria de agendar uma reunião institucional para conhecer o escritório SAF Advocacia."
+    "Olá, gostaria de falar com um advogado da SAF Advocacia e Consultoria."
   );
 
   return (
@@ -18,10 +18,9 @@ export default function AboutOffice() {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-xl overflow-hidden border border-saf-gold/30 bg-[#161F2C] p-2 shadow-2xl group">
               <div className="relative overflow-hidden rounded-lg">
-                {/* Tag obrigatória conforme especificação */}
                 <img
                   src="/foto/SAF/equipe.jpg"
-                  alt="Equipe de Advogados Santos, Araújo e Fonseca Advocacia"
+                  alt="Equipe de Advogados SAF Advocacia e Consultoria"
                   loading="lazy"
                   className="w-full h-auto object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
@@ -33,10 +32,10 @@ export default function AboutOffice() {
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded bg-[#0F141C]/90 backdrop-blur-md border border-saf-border flex items-center justify-between">
                   <div>
                     <p className="text-xs font-serif font-semibold text-saf-light">
-                      SAF — Santos, Araújo &amp; Fonseca
+                      SAF Advocacia e Consultoria
                     </p>
                     <p className="text-[10px] text-saf-gold uppercase tracking-wider">
-                      Reunião de Alinhamento Técnico &amp; Estratégico
+                      Banca de Excelência Jurídica &amp; Estratégia
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded border border-saf-gold/40 flex items-center justify-center text-saf-gold text-xs font-serif font-bold">
@@ -52,8 +51,8 @@ export default function AboutOffice() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-xs font-bold text-saf-light">Atuação Artesanal &amp; Ética</p>
-                <p className="text-[11px] text-saf-muted">Defesa técnica sem atalhos processuais</p>
+                <p className="text-xs font-bold text-saf-light">Atuação Estratégica &amp; Ética</p>
+                <p className="text-[11px] text-saf-muted">Segurança jurídica e solidez processual</p>
               </div>
             </div>
           </div>
@@ -65,20 +64,21 @@ export default function AboutOffice() {
             </div>
             
             <h2 className="font-serif text-3xl sm:text-4xl text-saf-light font-bold tracking-tight mb-6 leading-tight">
-              Solidez Jurídica, Confidencialidade e Foco Inegociável em{" "}
+              Solidez Jurídica, Rigor Técnico e Foco Inegociável em{" "}
               <span className="gold-gradient-text">Resultados Legítimos</span>
             </h2>
 
             <p className="text-sm sm:text-base text-saf-muted leading-relaxed mb-6">
-              A <strong className="text-saf-light">Santos, Araújo e Fonseca Advocacia</strong> consolidou-se como
-              uma banca jurídica de vanguarda, alicerçada na dedicação profunda a cada causa e no respeito
-              irrestrito às garantias constitucionais de nossos representados.
+              A <strong className="text-saf-light">SAF Advocacia e Consultoria</strong> consolidou-se como
+              uma banca jurídica de referência, alicerçada na dedicação profunda a cada causa e no compromisso
+              com a proteção patrimonial, conformidade jurídica e defesa combativa dos direitos de nossos representados.
             </p>
 
             <p className="text-sm sm:text-base text-saf-muted leading-relaxed mb-8">
-              Repudiamos soluções automatizadas. Cada investigação, inquérito, mandado ou processo cível
-              recebe análise minuciosa de provas, mapeamento de nulidades processuais e formulação de teses
-              recursais de alto nível técnico, garantindo uma defesa combativa perante tribunais locais e Cortes Superiores.
+              Repudiamos soluções automatizadas. Seja na condução de regularizações fundiárias, empreendimentos imobiliários
+              e contratos de alta complexidade, seja na atuação contenciosa em Direito Civil, Sucessões ou na defesa criminal
+              estratégica, cada caso recebe análise minuciosa de provas, mapeamento preventivo de riscos e formulação de
+              teses sólidas perante cartórios, órgãos administrativos e Tribunais Superiores.
             </p>
 
             {/* Pilares Institucionais */}
@@ -89,10 +89,10 @@ export default function AboutOffice() {
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-saf-light uppercase tracking-wider mb-1">
-                    Pronta Resposta
+                    Autoridade Imobiliária
                   </h3>
                   <p className="text-xs text-saf-muted leading-relaxed">
-                    Advogados disponíveis 24 horas para intervenção imediata em delegacias e flagrantes.
+                    Especialistas em regularização de imóveis, usucapião, loteamentos e condomínios.
                   </p>
                 </div>
               </div>
@@ -103,10 +103,10 @@ export default function AboutOffice() {
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-saf-light uppercase tracking-wider mb-1">
-                    Sigilo Profissional
+                    Sigilo &amp; Conformidade
                   </h3>
                   <p className="text-xs text-saf-muted leading-relaxed">
-                    Proteção integral de dados, relatos e estratégias sob o rigor do Estatuto da OAB.
+                    Proteção integral de dados, contratos e estratégias sob o rigor do Estatuto da OAB.
                   </p>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function AboutOffice() {
                     Técnica Processual
                   </h3>
                   <p className="text-xs text-saf-muted leading-relaxed">
-                    Domínio aprofundado da jurisprudência contemporânea do STJ e do STF.
+                    Domínio aprofundado da jurisprudência contemporânea do STJ, STF e tribunais estaduais.
                   </p>
                 </div>
               </div>
@@ -131,10 +131,10 @@ export default function AboutOffice() {
                 </div>
                 <div>
                   <h3 className="text-xs font-bold text-saf-light uppercase tracking-wider mb-1">
-                    Atendimento Humano
+                    Atendimento Integrado
                   </h3>
                   <p className="text-xs text-saf-muted leading-relaxed">
-                    Clareza e transparência no diálogo com clientes e familiares em momentos críticos.
+                    Corpo jurídico multidisciplinar com atuação ágil e suporte para demandas urgentes.
                   </p>
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function AboutOffice() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3.5 rounded border border-saf-gold/40 hover:border-saf-gold bg-[#151E2B] hover:bg-[#1A2536] text-saf-light hover:text-saf-gold text-xs font-semibold uppercase tracking-wider transition-all"
               >
-                <span>Agendar Consulta Institucional</span>
+                <span>Falar com Nossos Advogados</span>
                 <span className="text-saf-gold">→</span>
               </a>
             </div>

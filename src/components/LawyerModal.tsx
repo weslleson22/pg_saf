@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { X, CheckCircle2, MessageSquare, Shield, Award } from "lucide-react";
+import { X, CheckCircle2, MessageSquare, Award } from "lucide-react";
 import { Lawyer, getWhatsAppUrl } from "@/config/site";
 
 interface LawyerModalProps {
@@ -112,7 +112,7 @@ export default function LawyerModal({ lawyer, onClose }: LawyerModalProps) {
                 className="flex-1 inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded bg-saf-gold hover:bg-saf-gold-light text-[#0A0D12] text-xs font-bold uppercase tracking-wider transition-all shadow-md"
               >
                 <MessageSquare className="w-4 h-4 text-[#0A0D12]" />
-                <span>Consultar com {lawyer.name.split(" ")[1]}</span>
+                <span>Falar com {lawyer.name}</span>
               </a>
 
               <button

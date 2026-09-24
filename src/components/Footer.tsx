@@ -4,10 +4,8 @@ import React from "react";
 import {
   MapPin,
   Phone,
-  Mail,
   Clock,
   ShieldCheck,
-  Scale,
   ArrowUp,
   MessageSquare,
 } from "lucide-react";
@@ -33,17 +31,17 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-serif text-lg tracking-wider text-saf-light font-semibold block">
-                  SANTOS, ARAÚJO &amp; FONSECA
+                  SAF ADVOCACIA
                 </span>
                 <span className="text-[10px] tracking-[0.25em] text-saf-gold uppercase font-medium">
-                  Advocacia &amp; Consultoria Jurídica
+                  E CONSULTORIA
                 </span>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-saf-muted leading-relaxed mb-6">
-              Sociedade de advogados pautada pelo rigor dogmático, atuação combativa em defesa das garantias
-              constitucionais e atendimento artesanal de alta discrição.
+              Sociedade de advogados com foco prioritário em Direito Imobiliário &amp; Negócios e atuação
+              multidisciplinar estratégica, pautada pela excelência técnica, ética e proteção integral do patrimônio.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-[#131A24] border border-saf-border text-[11px] text-saf-light">
@@ -93,18 +91,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-xs">
               <li className="text-saf-gold font-medium">
-                • Direito Penal &amp; Econômico
+                • Direito Imobiliário &amp; Negócios
               </li>
-              <li>• Habeas Corpus (TJ / TRF / STJ / STF)</li>
-              <li>• Flagrantes &amp; Custódia 24h</li>
-              <li>• Tribunal do Júri Especializado</li>
-              <li>• Direito Civil &amp; Contratual</li>
-              <li>• Família &amp; Planejamento Sucessório</li>
-              <li>• Empresarial &amp; Tributário</li>
+              <li>• Regularização Fundiária &amp; Usucapião</li>
+              <li>• Contratos de Compra, Venda &amp; Locação</li>
+              <li>• Condomínios, Incorporações &amp; Leilões</li>
+              <li>• Direito Criminal / Penal Estratégico</li>
+              <li>• Direito de Família e Sucessões</li>
+              <li>• Direito Civil e Contratos</li>
+              <li>• Consultoria Empresarial e Tributária</li>
             </ul>
           </div>
 
-          {/* Coluna 4: Contato & Plantão */}
+          {/* Coluna 4: Contato & Atendimento */}
           <div className="lg:col-span-3">
             <h4 className="text-xs font-semibold text-saf-light uppercase tracking-[0.2em] mb-4">
               Atendimento &amp; Sede
@@ -120,7 +119,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-saf-gold shrink-0" />
-                <span>Plantão Criminal: 24 Horas / 7 Dias</span>
+                <span>Segunda a Sexta, 08h às 18h (Plantão 24h)</span>
               </li>
             </ul>
 
@@ -132,7 +131,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded bg-[#151D29] hover:bg-saf-gold hover:text-[#0A0D12] text-saf-gold border border-saf-gold/40 text-xs font-semibold uppercase tracking-wider transition-colors"
               >
                 <MessageSquare className="w-3.5 h-3.5" />
-                <span>WhatsApp Plantão 24h</span>
+                <span>Falar no WhatsApp</span>
               </a>
             </div>
           </div>

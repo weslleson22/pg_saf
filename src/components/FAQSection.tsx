@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown, HelpCircle, MessageSquare } from "lucide-react";
-import { FAQ_LIST, SITE_CONFIG, getWhatsAppUrl } from "@/config/site";
+import { ChevronDown, MessageSquare } from "lucide-react";
+import { FAQ_LIST, getWhatsAppUrl } from "@/config/site";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -12,7 +12,7 @@ export default function FAQSection() {
   };
 
   const whatsappUrl = getWhatsAppUrl(
-    "Olá! Gostaria de tirar uma dúvida jurídica específica com a equipe da SAF Advocacia."
+    "Olá, gostaria de falar com um advogado da SAF Advocacia e Consultoria."
   );
 
   return (
@@ -25,10 +25,10 @@ export default function FAQSection() {
             Dúvidas Frequentes &amp; Esclarecimentos
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl text-saf-light font-bold tracking-tight mb-4">
-            Perguntas Cruciais em Momentos de Urgência
+            Respostas para suas Principais Dúvidas
           </h2>
           <p className="text-saf-muted text-sm sm:text-base leading-relaxed">
-            Respostas diretas e transparentes sobre atuação em flagrantes, custódia, sigilo e procedimentos de defesa.
+            Respostas diretas e transparentes sobre regularização imobiliária, usucapião, contratos e procedimentos jurídicos.
           </p>
         </div>
 

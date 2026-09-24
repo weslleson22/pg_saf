@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageSquare, PhoneCall } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { SITE_CONFIG, getWhatsAppUrl } from "@/config/site";
 
 export default function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(true);
-  const whatsappUrl = getWhatsAppUrl(SITE_CONFIG.emergencyWhatsAppMessage);
+  const whatsappUrl = getWhatsAppUrl(
+    "Olá, gostaria de falar com um advogado da SAF Advocacia e Consultoria."
+  );
 
   return (
     <div className="fixed bottom-6 right-6 z-40 flex items-center gap-3">
@@ -19,10 +21,10 @@ export default function FloatingWhatsApp() {
           </span>
           <div>
             <p className="font-semibold text-saf-gold text-[11px] uppercase tracking-wider">
-              Plantão Criminal 24h
+              SAF Advocacia e Consultoria
             </p>
             <p className="text-saf-muted text-[11px]">
-              Fale agora com a equipe
+              Fale agora com um advogado
             </p>
           </div>
           <button
@@ -40,7 +42,7 @@ export default function FloatingWhatsApp() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Falar no WhatsApp com o Plantão da SAF Advocacia"
+        aria-label="Falar no WhatsApp com SAF Advocacia e Consultoria"
         className="relative group p-4 rounded-full bg-gradient-to-br from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white shadow-2xl shadow-emerald-950/70 border border-emerald-400/40 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center"
       >
         {/* Anel de Pulso Sutil */}
